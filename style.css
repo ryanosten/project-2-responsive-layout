@@ -122,6 +122,8 @@ span{
 
 /** question - when use span vs para? **/
 
+/** FOOTER **/
+
 footer {
 	display: block;
 	margin: 0 auto; 
@@ -189,10 +191,16 @@ footer p {
 	text-transform: uppercase;
 }
 
+.nav-bar-footer {
+	display: none;
+}
+
 /** MEDIA QUERIES **/
 
 @media (min-width: 768px) {
   
+  /** HEADER **/
+
   .nav-links li  {
   	display: inline-block;
   }
@@ -217,6 +225,27 @@ footer p {
 	.profile-pic {
 		float: right;
 		max-width: 38%;
+  }
+
+  /** COLUMN LAYOUT **/
+
+	.project {
+		display: inline-block;
+		width: 50%;
+		/** should I be using width or max-width property? **/
+		margin-right: -4px;
+		vertical-align: top; /** this was tough, had to use Guil video, but got it! let's go over it. Also is it better to use inlin-block or float here. When I used float, I couldn't center right element in its container **/	
+  	padding-bottom: 25px;
+  }
+
+/** FOOTER **/
+
+  .back-to-top {
+  	display: none;
+  }
+
+  .nav-bar-footer {
+  	display: inline-block;
   }
 
 }
