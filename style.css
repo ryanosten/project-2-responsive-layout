@@ -73,6 +73,10 @@ span{
 .profile-container {
 	width: 60%;	
 }
+
+When should I use relative max-width vs relative width?
+
+How can I reduce the amount of lines of code?
 **/
 
 .profile-pic {
@@ -231,8 +235,7 @@ footer p {
 
 	.project {
 		display: inline-block;
-		width: 50%;
-		/** should I be using width or max-width property? **/
+		width: 50%; 
 		margin-right: -4px;
 		vertical-align: top; /** this was tough, had to use Guil video, but got it! let's go over it. Also is it better to use inlin-block or float here. When I used float, I couldn't center right element in its container **/	
   	padding-bottom: 25px;
@@ -246,13 +249,38 @@ footer p {
 
   .nav-bar-footer {
   	display: inline-block;
+  	width: 65%;
+  	text-align: right;
+  }
+
+  .student-name {
+  	width: 20%;
   }
 
 }
 
+@media (min-width: 1024px) {
+	
+	.main-header h1 {
+		display: inline-block;
+	}
 
+	.nav-bar {
+		display: inline-block; 
+		width: 75%;
+		text-align: right;
+	}
 
+	.profile-pic {
+		width: 38%;
+		max-width: 450px;
+	}
 
+	.project {
+		width: 33%;
+	}
+
+}
 
 
 
