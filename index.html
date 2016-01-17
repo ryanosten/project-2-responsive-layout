@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Responsive Layout</title>
     <!-- font include -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
     <!-- css stylesheet -->
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
   
     <div class="wrapper">
       <!-- header -->
-      <div class="main-header">
+      <div class="main-header clearfix">
         <h1>Ryan Osten</h1>
         <nav class="nav-bar"> 
           <ul class="nav-links">
@@ -23,9 +23,11 @@
           </ul>
         </nav>
           <!-- profile -->
-        <div class="profile-container"> 
+        <div class="profile-container clearfix"> 
           <img class="profile-pic" src="images/responsive-layout-profile.png">
-          <span>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</span>
+          <div class="profile-desc">
+            <span>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</span>
+          </div>
         </div>  
       </div>
 

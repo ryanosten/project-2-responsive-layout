@@ -13,11 +13,16 @@ body {
 p, 
 span{
 	line-height: 1.5;
-	font-size: 1.1em;
 	max-width: 85%;
 	margin: auto;
 	font-size: 1.2em;
 	color: #787878;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -187,14 +192,33 @@ footer p {
 /** MEDIA QUERIES **/
 
 @media (min-width: 768px) {
-  .nav-links li a {
-  	background-color: transparent;
+  
+  .nav-links li  {
+  	display: inline-block;
   }
 
-  .nav-links li {
+  .nav-links li a {
   	background-color: transparent;
-	display: inline-block;
+  	padding-left: 25px;
+  	padding-right: 25px;
+  	text-align: center;
   }
+
+	.profile-desc {
+  	font-size: 1.1em;
+  	font-weight: 300;
+  	max-width: 60%; 
+  	padding-top: 40px;
+  	text-align: left;
+  	float: left;
+  	 
+  }
+
+	.profile-pic {
+		float: right;
+		max-width: 38%;
+  }
+
 }
 
 
