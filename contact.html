@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <!-- font include -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -30,19 +31,15 @@
             <form action="//formspree.io/ostenrj@gmail.com" method="POST">
               <div class="form-name">
                 <label for="name">Name:</label>          
-                <input type="text" name="name" placeholder="Your name">
+                <input id="name" type="text" name="name" placeholder="Your name">
               </div>      
               <div class="form-email">
                 <label for="_replyto">Email:</label>
-                <input type="email" name="_replyto" placeholder="Your e-mail">
+                <input id="_replyto" type="email" name="_replyto" placeholder="Your e-mail">
               </div>
               <div class="form-msg">
                 <label for="message">Whats up:</label>
-                <textarea name="message" rows="5" placeholder="Your message"></textarea>
-              </div>
-              <div>
-                <input type="text" name="_gotcha" style="display:none">
-                <input type="hidden" name="_next" value="thanks.html">
+                <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
               </div>
               <div class="buttonHolder">
                 <input type="submit" class="button" value="Send">

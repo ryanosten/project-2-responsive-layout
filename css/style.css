@@ -256,7 +256,7 @@ textarea {
 	margin-left: 88px;
 	background-color: #574bed;
 	color: white;
-	border-color: #574bed;
+	border-color: transparent;
 }
 
 /** MEDIA QUERIES **/
@@ -267,7 +267,7 @@ textarea {
 
   .main-header-portfolio {
   	position: fixed;
-  	box-shadow: 0 1px 4px rgba (0,0,0,0.4);
+  	box-shadow: 0 1px 4px rgba(0,0,0,0.4);
   	width: 100%;
   	top: 0;
   }
