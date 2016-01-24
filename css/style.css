@@ -4,8 +4,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-
-
 .wrapper {
 	min-height: calc(100vh - 324.9px);
 }
@@ -24,7 +22,6 @@ span{
   display: table;
   clear: both;
 }
-
 
 /** MAIN-HEADER **/
 
@@ -49,7 +46,6 @@ span{
 	color: #4b4b4b;
 }
 
-
 .nav-links li a {
 	color: #3e3e3e;
 	text-transform: uppercase;
@@ -61,8 +57,12 @@ span{
 	font-weight: 900;
 }
 
-
 .nav-links li a:hover {
+	background-color: #574bed;
+	color: white;
+}
+
+.nav-links li a.selected {
 	background-color: #574bed;
 	color: white;
 }
@@ -83,6 +83,8 @@ span{
 When should I use relative max-width vs relative width?
 
 How can I reduce the amount of lines of code?
+
+Discuss how best to handle whitespace on contact page.
 **/
 
 .profile-pic {
@@ -128,7 +130,6 @@ How can I reduce the amount of lines of code?
 	font-weight: 500;
 	color: #4b4b4b;
 }
-
 
 /** question - when use span vs para? **/
 
@@ -258,7 +259,6 @@ textarea {
 	border-color: #574bed;
 }
 
-
 /** MEDIA QUERIES **/
 
 @media (min-width: 768px) {
@@ -267,12 +267,12 @@ textarea {
 
   .main-header-portfolio {
   	position: fixed;
-  	box-shadow: 0 1px 4px rgba (0,0,0,.4);
+  	box-shadow: 0 1px 4px rgba (0,0,0,0.4);
   	width: 100%;
   	top: 0;
   }
   
-  .nav-links li  {
+  .nav-links li {
   	display: inline-block;
   }
 
@@ -284,14 +284,14 @@ textarea {
   }
 
   .nav-links li a:hover {
-	border-bottom: 3px solid #574bed;
-	margin-bottom: -3px;
-	background-color: transparent;
-	color: #3e3e3e;
+		border-bottom: 3px solid #574bed;
+		margin-bottom: -3px;
+		background-color: transparent;
+		color: #3e3e3e;
 
 	}
 
-	.selected {
+	.nav-links li a.selected {
 		border-bottom: 3px solid #574bed;
 		margin-bottom: -3px;
 		background-color: transparent;
@@ -314,7 +314,7 @@ textarea {
 		max-width: 38%;
   }
 
-  /** COLUMN LAYOUT **/
+ 	/** COLUMN LAYOUT **/
 
   .main-container-portfolio{
   	margin-top: 175px;
@@ -328,7 +328,7 @@ textarea {
 		padding-bottom: 25px;
 	}
 
-/** FOOTER **/
+	/** FOOTER **/
 
   .back-to-top {
   	display: none;
@@ -347,27 +347,27 @@ textarea {
   /** CONTACT FORM **/
 
 
-.form-name label,
-.form-email label {
-	margin-right: 35px;
-}
+	.form-name label,
+	.form-email label {
+		margin-right: 35px;
+	}
 
-.form-name input {
-	margin-left: -5px;
-}
+	.form-name input {
+		margin-left: -5px;
+	}
 
 
-input,
-textarea {
-	width: 250px;
-}
+	input,
+	textarea {
+		width: 250px;
+	}
 
-.button {
-	margin-top: 10px;
-	width: 225px;
-	height: 40px;
-	margin-left: 110px;
-}
+	.button {
+		margin-top: 10px;
+		width: 225px;
+		height: 40px;
+		margin-left: 110px;
+	}
 
 }
 
